@@ -24,7 +24,7 @@ public abstract class Character implements Creature {
     public int getHp() {
         return hp;
     }
-    public void setHp() {
+    public void setHp(int i) {
         this.hp = Math.max(hp, 0);
     }
 }
