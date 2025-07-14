@@ -3,7 +3,8 @@ public abstract class Monster implements Creature{
     private int hp;
     private char suffix;
     //コンストラクタ
-    public Monster(int hp, char suffix) {
+    public Monster(String name,int hp, char suffix) {
+        this.name = name;
         this.hp = hp;
         this.suffix = suffix;
     }

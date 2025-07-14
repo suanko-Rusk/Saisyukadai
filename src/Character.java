@@ -4,7 +4,8 @@ public abstract class Character implements Creature {
     //コンストラクタ
     public Character(String name, int hp) {
         this.name = name;
-        this.hp = Math.max(hp,0);
+        //this.hp = Math.max(hp,0);
+        this.hp = hp;
     }
     //生存確認
     public final boolean isAlive() {
@@ -22,9 +23,9 @@ public abstract class Character implements Creature {
         this.name = name;
     }
     public int getHp() {
-        return hp;
+        return this.hp;
     }
     public void setHp(int i) {
-        this.hp = Math.max(hp, 0);
+        this.hp = i;
     }
 }
