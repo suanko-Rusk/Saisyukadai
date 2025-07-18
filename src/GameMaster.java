@@ -13,9 +13,9 @@ public class GameMaster {
 
 
         ArrayList<Monster> d = new ArrayList<Monster>();
-        Goblin g = new Goblin("ゴブリン", 50, 'A');
-        Matango m = new Matango("マタンゴ", 45, 'A');
-        Slime s = new Slime("スライム", 40, 'A');
+        Goblin g = new Goblin(50, 'A');
+        Matango m = new Matango(45, 'A');
+        Slime s = new Slime(40, 'A');
         d.add(g);
         d.add(m);
         d.add(s);
