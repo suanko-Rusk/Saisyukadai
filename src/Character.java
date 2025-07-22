@@ -1,16 +1,18 @@
-public abstract class Character implements Creature {
+public abstract class Character extends Weapon implements Creature  {
     private String name;
     private int hp;
     //コンストラクタ
-    public Character(String name, int hp) {
+    public Character(String name, int hp, weapon) {
         this.name = name;
         //this.hp = Math.max(hp,0);
         this.hp = hp;
+        Weapon weapon;
     }
     //生存確認
     public final boolean isAlive() {
         return getHp() > 0;
     }
+    public void die() { System.out.println(getName() +"は死んでしまった！"); }
     //HP,Name確認
     public void showStatus() {
         System.out.println(getName() + ": HP" + getHp());

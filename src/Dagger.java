@@ -1,0 +1,8 @@
+public class Dagger extends Weapon {
+    public Dagger(String name, int damage) {
+        super(" 短剣", 6);
+    }
+    public String attackMessage() {
+        return getName() + "で素早く切りつけた！";
+    }
+}
