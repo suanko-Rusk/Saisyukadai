@@ -9,22 +9,18 @@ public abstract class Weapon {
         this.cost = cost;
     }
     public abstract String attackMessage();
-    public String getName() {
-        return name;
+
+
+    public int getCost() {
+        return this.getCost();
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setCost(int cost) {
+        this.cost = cost;
     }
     public int getDamage() {
         return this.damage;
     }
     public void setDamage(int damage) {
         this.damage = damage;
-    }
-    public int getCost() {
-        return this.getCost();
-    }
-    public void setCost(int cost) {
-        this.cost = cost;
     }
 }

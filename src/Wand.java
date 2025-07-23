@@ -1,9 +1,9 @@
 public class Wand extends Weapon {
-    public Wand(String name, int damage) {
+    public Wand() {
         super("魔法の杖", 15);
         this.setCost(5);
     }
     public String attackMessage() {
-        return getName() + "から魔法を放った！";
+        return "から魔法を放った！";
     }
 }

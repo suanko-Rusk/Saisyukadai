@@ -1,12 +1,13 @@
-public abstract class Character extends Weapon implements Creature  {
+public abstract class Character implements Creature  {
     private String name;
     private int hp;
+    private Weapon weapon;
     //コンストラクタ
-    public Character(String name, int hp, weapon) {
+    public Character(String name, int hp,Weapon weapon) {
         this.name = name;
         //this.hp = Math.max(hp,0);
         this.hp = hp;
-        Weapon weapon;
+
     }
     //生存確認
     public final boolean isAlive() {
@@ -29,5 +30,14 @@ public abstract class Character extends Weapon implements Creature  {
     }
     public void setHp(int i) {
         this.hp = i;
+    }
+    public String getwName() {
+        return weapon.name;
+    }
+    public void setwName(String name) {
+        this.weapon.name = weapon.name;
+    }
+    public Weapon getWeapon() {
+        return weapon;
     }
 }

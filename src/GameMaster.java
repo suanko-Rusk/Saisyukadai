@@ -4,8 +4,11 @@ public class GameMaster {
     public static void main(String[] args) {
 
         ArrayList<Character> c = new ArrayList<Character>();
-        Hero h =new Hero("勇者", 100, "剣");
-        Wizard w = new Wizard("魔法使い", 60, 60);
+        Sword sw = new Sword();
+        Wand wa = new Wand();
+        Dagger da = new Dagger();
+        Hero h =new Hero("勇者", 100, sw);
+        Wizard w = new Wizard("魔法使い", 60, 60, wa);
         Thief t = new Thief("盗賊", 70);
         c.add(h);
         c.add(w);
