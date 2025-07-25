@@ -1,12 +1,16 @@
-public abstract class Character implements Creature  {
+package creature;
+import weapon.Weapon;
+
+public abstract class Character implements Creature {
     private String name;
     private int hp;
     private Weapon weapon;
     //コンストラクタ
-    public Character(String name, int hp,Weapon weapon) {
+    public Character(String name, int hp, Weapon weapon) {
         this.name = name;
         //this.hp = Math.max(hp,0);
         this.hp = hp;
+        this.weapon = weapon;
 
     }
     //生存確認
@@ -30,12 +34,6 @@ public abstract class Character implements Creature  {
     }
     public void setHp(int i) {
         this.hp = i;
-    }
-    public String getwName() {
-        return weapon.name;
-    }
-    public void setwName(String name) {
-        this.weapon.name = weapon.name;
     }
     public Weapon getWeapon() {
         return weapon;

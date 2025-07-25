@@ -1,3 +1,8 @@
+package monster;
+
+import creature.Creature;
+import creature.Monster;
+
 public class Goblin extends Monster {
     public Goblin(int hp, char suffix) {
         super("ゴブリン",hp, suffix);

@@ -1,6 +1,12 @@
+package character;
+
+import creature.Character;
+import creature.Creature;
+import weapon.Weapon;
+
 public class Thief extends Character {
-    public Thief(String name, int hp) {
-        super(name, hp);
+    public Thief(String name, int hp , Weapon weapon) {
+        super(name, hp ,weapon);
     }
     public void attack(Creature target) {
         System.out.println(getName() + "は素早く攻撃した！" + target.getName() + "に5のダメージを与えた！");

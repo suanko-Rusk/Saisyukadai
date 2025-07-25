@@ -1,5 +1,7 @@
+package weapon;
+
 public abstract class Weapon {
-    protected String name;
+    private String name;
     private int damage;
     private int cost = 0;
 
@@ -10,8 +12,10 @@ public abstract class Weapon {
     }
     public abstract String attackMessage();
 
-
-    public int getCost() {
+    public  String getName() {
+        return name;
+    }
+     public int getCost() {
         return this.getCost();
     }
     public void setCost(int cost) {
