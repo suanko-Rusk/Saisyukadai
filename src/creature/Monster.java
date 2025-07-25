@@ -10,6 +10,13 @@ public abstract class Monster implements Creature {
         this.hp = hp;
         this.suffix = suffix;
     }
+
+    public void run() {
+        System.out.println(getName() + getSuffix() + "は逃げ出した");
+    }
+    public void die() {
+        System.out.println(getName() + getSuffix() + "を倒した！");
+    }
     //生存確認
     public final boolean isAlive(){
         return getHp() > 0;
